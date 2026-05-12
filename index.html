@@ -23,7 +23,18 @@
   <meta property="og:locale" content="de_CH"/>
   <meta property="og:site_name" content="Hauswartung Hecht"/>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://www.hauswartung-hecht.ch/#business","name":"Hauswartung Hecht","description":"Persönlicher Hausmeister aus Dietwil – Gartenpflege, Winterdienst, Kleinreparaturen und Instandhaltung in der Zentralschweiz.","url":"https://www.hauswartung-hecht.ch/","telephone":"+41 79 391 24 69","email":"info@hauswartung-hecht.ch","numberOfEmployees":{"@type":"QuantitativeValue","value":1},"areaServed":[{"@type":"AdministrativeArea","name":"Kanton Zürich"},{"@type":"AdministrativeArea","name":"Kanton Aargau"},{"@type":"AdministrativeArea","name":"Kanton Zug"},{"@type":"AdministrativeArea","name":"Kanton Luzern"},{"@type":"AdministrativeArea","name":"Kanton Schwyz"}],"address":{"@type":"PostalAddress","addressLocality":"Dietwil","postalCode":"5632","addressRegion":"AG","addressCountry":"CH"},"geo":{"@type":"GeoCoordinates","latitude":47.1833,"longitude":8.3833}}</script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+  .section-light { background-color: #ecf5fe !important; }
+  .section-mid { background-color: #e6eff8 !important; }
+  .section-white { background-color: #ffffff !important; }
+  .card-white { background-color: #ffffff !important; }
+  [class*="bg-surface-container-low"] { background-color: #ecf5fe !important; }
+  [class*="bg-surface-container-high"] { background-color: #e0e9f2 !important; }
+  [class*="bg-surface-container"]:not([class*="lowest"]):not([class*="low"]):not([class*="high"]) { background-color: #e6eff8 !important; }
+  [class*="bg-surface-container-lowest"] { background-color: #ffffff !important; }
+  [class*="bg-background"] { background-color: #f6faff !important; }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script id="tailwind-config">
@@ -54,7 +65,7 @@
 </header>
 
 <main>
-  <section class="relative bg-surface-container-low py-10 md:py-32 hero-clip overflow-hidden">
+  <section class="relative py-10 md:py-32 hero-clip overflow-hidden" style="background:#ecf5fe;">
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop flex flex-col md:flex-row items-center gap-8 md:gap-16 relative z-10">
       <div class="flex-1 space-y-8">
         <div class="inline-flex items-center gap-2 px-3 py-1 bg-primary/10 border-l-4 border-primary">
@@ -166,7 +177,7 @@
     </div>
   </section>
 
-  <section class="py-24 bg-surface-container">
+  <section style="background:#e6eff8;" class="py-24 bg-surface-container">
     <div class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         <div class="space-y-8">
@@ -211,7 +222,7 @@
   </section>
 </main>
 
-<footer class="w-full bg-surface-container-low border-t border-outline-variant">
+<footer class="w-full border-t border-outline-variant">
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop py-10">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
       <!-- Logo & Adresse -->
