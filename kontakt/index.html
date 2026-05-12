@@ -11,7 +11,18 @@
   <link rel="canonical" href="https://www.hauswartung-hecht.ch/kontakt/"/>
   <meta name="geo.region" content="CH-AG"/>
   <meta name="geo.placename" content="Dietwil"/>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+  .section-light { background-color: #ecf5fe !important; }
+  .section-mid { background-color: #e6eff8 !important; }
+  .section-white { background-color: #ffffff !important; }
+  .card-white { background-color: #ffffff !important; }
+  [class*="bg-surface-container-low"] { background-color: #ecf5fe !important; }
+  [class*="bg-surface-container-high"] { background-color: #e0e9f2 !important; }
+  [class*="bg-surface-container"]:not([class*="lowest"]):not([class*="low"]):not([class*="high"]) { background-color: #e6eff8 !important; }
+  [class*="bg-surface-container-lowest"] { background-color: #ffffff !important; }
+  [class*="bg-background"] { background-color: #f6faff !important; }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script id="tailwind-config">
@@ -127,7 +138,7 @@
 
     <!-- Standort -->
     <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
-      <div class="md:col-span-3 rounded-xl overflow-hidden border border-outline-variant h-[360px] bg-surface-container-high flex items-center justify-center relative">
+      <div class="md:col-span-3 rounded-xl overflow-hidden border border-outline-variant h-[360px] flex items-center justify-center relative">
         <div class="text-center p-8">
           <span class="material-symbols-outlined text-primary text-6xl mb-4 block">location_on</span>
           <p class="font-headline-md text-headline-md text-on-surface mb-2">Standort: Dietwil, Aargau</p>
@@ -173,7 +184,7 @@
   </section>
 </main>
 
-<footer class="w-full bg-surface-container-low border-t border-outline-variant">
+<footer class="w-full border-t border-outline-variant">
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop py-10">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
       <!-- Logo & Adresse -->
