@@ -3,14 +3,12 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-  <title>Kontakt – Hauswartung Hecht | Persönlich erreichbar aus Dietwil</title>
-  <meta name="description" content="Kontakt Hauswartung Hecht – persönlicher Hausmeister aus Dietwil. Direkt erreichbar, keine Warteschleifen. Tätig in der Zentralschweiz (Zürich, Aargau, Zug, Luzern und Schwyz)."/>
+  <title>Projekte – Hauswartung Hecht | Referenzen Zentralschweiz (ZH, AG, ZG, LU, SZ)</title>
+  <meta name="description" content="Referenzprojekte von Hauswartung Hecht – Gartenpflege, Winterdienst, Kleinreparaturen und Hauswartung in der Zentralschweiz (Zürich, Aargau, Zug, Luzern und Schwyz). Alles aus einer Hand."/>
   <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
-  <link rel="canonical" href="https://www.hauswartung-hecht.ch/kontakt/"/>
-  <meta name="geo.region" content="CH-AG"/>
-  <meta name="geo.placename" content="Dietwil"/>
+  <link rel="canonical" href="https://www.hauswartung-hecht.ch/projekte/"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -18,7 +16,7 @@
     tailwind.config = {
       darkMode:"class",
       theme:{extend:{
-        colors:{"primary":"#b5000b","primary-container":"#e30613","on-primary":"#ffffff","surface":"#ffffff","surface-container":"#f0f0f0","surface-container-low":"#f8f8f8","surface-container-lowest":"#ffffff","surface-container-high":"#ebebeb","on-surface":"#141d23","on-surface-variant":"#5e3f3b","outline-variant":"#e9bcb6","outline":"#936e69","secondary":"#5d5e61","background":"#ffffff"},
+        colors:{"primary":"#b5000b","primary-container":"#e30613","on-primary":"#ffffff","surface":"#ffffff","surface-container":"#e6eff8","surface-container-low":"#ecf5fe","surface-container-lowest":"#ffffff","surface-container-high":"#e0e9f2","on-surface":"#141d23","on-surface-variant":"#5e3f3b","outline-variant":"#e9bcb6","outline":"#936e69","secondary":"#5d5e61","background":"#ffffff"},
         borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},
         spacing:{"margin-desktop":"48px","container-max":"1200px","margin-mobile":"16px","base":"8px","gutter":"24px"},
         fontFamily:{"headline-md":["Hanken Grotesk"],"body-md":["Inter"],"label-sm":["Inter"],"body-lg":["Inter"],"display-lg":["Hanken Grotesk"],"display-lg-mobile":["Hanken Grotesk"]},
@@ -26,153 +24,151 @@
       }}
     }
   </script>
-  <style>.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;}</style>
+  <style>
+    .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;font-size:24px;}
+    .bento-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;}
+    .bento-item-lg{grid-column:span 8;}
+    .bento-item-sm{grid-column:span 4;}
+    @media(max-width:1024px){.bento-item-lg,.bento-item-sm{grid-column:span 12;}}
+  </style>
 </head>
-<body class="bg-white text-on-background font-body-md">
+<body class="bg-white text-on-background">
 
 <header class="w-full top-0 sticky bg-white border-b border-outline-variant z-50">
   <nav class="flex justify-between items-center h-16 md:h-40 px-margin-mobile md:px-4 md:px-margin-desktop max-w-container-max mx-auto">
     <a href="/" aria-label="Hauswartung Hecht – Startseite"><img src="/Hauswart-hecht-logo.png" alt="Hauswartung Hecht – Hauswartung & Gebäudeunterhalt" class="h-10 md:h-32 w-auto max-w-[160px] md:max-w-[420px]"  width="400" height="128"/></a>
     <div class="hidden md:flex gap-gutter items-center">
       <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="/">Startseite</a>
-      <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="/projekte/">Projekte</a>
+      <a class="font-body-md text-body-md text-primary border-b-2 border-primary font-bold pb-1" href="/projekte/" aria-current="page">Projekte</a>
       <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="/ueber-uns/">Über uns</a>
-      <a class="font-body-md text-body-md text-primary border-b-2 border-primary font-bold pb-1" href="/kontakt/" aria-current="page">Kontakt</a>
+      <a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="/kontakt/">Kontakt</a>
     </div>
     <button onclick="document.getElementById('mobile-menu').classList.remove('hidden')" class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface" aria-label="Menü öffnen">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </button>
-    <a href="/kontakt/" class="hidden md:flex bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:brightness-110 transition-all uppercase tracking-wider active:scale-95">
+    <a href="/kontakt/" class="hidden md:flex bg-primary text-on-primary px-6 py-3 font-label-sm text-label-sm rounded uppercase tracking-wider hover:brightness-110 transition-all active:scale-95">
       Jetzt Kontaktieren
     </a>
   </nav>
 </header>
 
-<main>
-  <!-- Hero -->
-  <section class="py-20 px-margin-mobile md:px-4 md:px-margin-desktop max-w-container-max mx-auto">
-    <div class="max-w-3xl">
-      <span class="text-primary font-label-sm text-label-sm uppercase tracking-widest block mb-4">Direkt – persönlich – unkompliziert</span>
-      <h1 class="font-display-lg text-2xl md:text-display-lg text-on-surface mb-6">
-        Sie schreiben.<br/><span class="text-primary">Ich melde mich.</span>
-      </h1>
-      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-        Kein Formular, das irgendwo verschwindet. Kein Callcenter. Wenn Sie sich melden, sind Sie direkt bei mir – dem Handwerker, der auch den Auftrag erledigt. Ich antworte in der Regel am selben oder nächsten Tag.
-      </p>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop py-20">
+
+  <header class="mb-20 max-w-3xl">
+    <span class="text-primary font-label-sm text-label-sm tracking-[0.2em] uppercase mb-4 block">Aus der Praxis – aus der Zentralschweiz</span>
+    <h1 class="font-display-lg text-2xl md:text-display-lg text-on-background mb-6">Sorgfalt in <span class="text-primary">jedem Auftrag.</span></h1>
+    <p class="font-body-lg text-body-lg text-secondary">
+      Jede Liegenschaft ist anders – deshalb gehe ich auf jede individuell ein. Hier sehen Sie einige Arbeiten, die ich in der Zentralschweiz (Zürich, Aargau, Zug, Luzern und Schwyz) erledigt habe. Keine Hochglanzprojekte eines grossen Teams, sondern echte Arbeit eines Handwerkers.
+    </p>
+  </header>
+
+  <!-- 6 Kategorie-Kacheln -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-gutter">
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">home_repair_service</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Hauswartung & Gebäudeunterhalt</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Regelmässige Kontrolle und Pflege einer Stockwerkeigentümerschaft in Luzern – Treppenhaus, Keller, Aussenbereich, technischer Unterhalt und Winterdienst aus einer Hand.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Hauswartung · Technischer Unterhalt</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Winterdienst · Gebäudekontrollen</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">park</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Gartenarbeiten</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Ganzjährige Gartenbetreuung für ein Einfamilienhaus im Kanton Aargau – Rasenmähen, Heckenschnitt, Laubentsorgung, Unkraut entfernen und Bewässerungskontrolle.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Rasenmähen · Heckenschnitt · Laubrechen</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Bewässerung · Unkraut entfernen</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">construction</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Renovationen & Reparaturen</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Wohnungsrenovation in Zürich nach Mieterwechsel – Malerarbeiten, Bodenverlegung, Silikonfugen erneuern, Möbelmontage und Kleinumbauten komplett in Eigenregie.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Malerarbeiten · Bodenverlegung · Trockenbau</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Silikonfugen · Möbelmontage</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">electrical_services</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Technische Arbeiten</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Lampenmontage im Treppenhaus, Sanitär-Reparatur im Bad, Gerätemontage in der Küche – alles in einem Einsatz für eine Hausverwaltung im Kanton Zug erledigt.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Lampenmontage · Sanitär-Reparaturen</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Bohr- & Montagearbeiten · Gerätemontage</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">cleaning_services</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Reinigungsservice</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Endreinigung und Fensterreinigung nach Wohnungsübergabe in Luzern – inklusive Treppenhausreinigung für das gesamte Mehrfamilienhaus.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Endreinigung · Fensterreinigung</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Treppenhausreinigung · Umzugsreinigung</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+    <article class="group relative overflow-hidden rounded-xl border border-outline-variant bg-surface-container-lowest p-8 flex flex-col gap-4 hover:border-primary transition-colors duration-300">
+      <div class="text-primary"><span class="material-symbols-outlined text-4xl">more_horiz</span></div>
+      <div class="flex items-center gap-2">
+        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Weitere Dienstleistungen</span>
+      </div>
+      <p class="font-body-md text-body-md text-on-surface-variant flex-grow">Wohnungsauflösung mit Entrümpelung und Entsorgung in Aargau – sämtliche Möbel, Gegenstände und Sperrgut fachgerecht entsorgt, Wohnung besenrein übergeben.</p>
+      <ul class="space-y-1 font-body-md text-sm text-on-surface-variant">
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Entrümpelung · Entsorgung · Umzüge</li>
+        <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary" style="font-size:14px;">check</span>Pikett-Service · Hausbetreuung</li>
+      </ul>
+      <a class="font-label-sm text-label-sm text-primary flex items-center gap-2 group-hover:gap-4 transition-all" href="/kontakt/">JETZT KONTAKTIEREN <span class="material-symbols-outlined">arrow_forward</span></a>
+      <div class="absolute left-0 top-0 w-1 h-full bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    </article>
+
+  </div>
+
+  <!-- CTA -->
+  <section class="mt-32 py-20 border-t border-outline-variant flex flex-col md:flex-row items-center justify-between gap-gutter">
+    <div class="max-w-xl text-center md:text-left">
+      <h2 class="font-headline-md text-headline-md mb-4">Haben Sie eine ähnliche Aufgabe?</h2>
+      <p class="font-body-md text-body-md text-secondary">Melden Sie sich einfach. Ich schaue mir die Situation an und mache Ihnen eine ehrliche Offerte – ohne Verkaufsdruck.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="/kontakt/" class="bg-primary text-on-primary px-8 py-4 font-label-sm text-label-sm rounded hover:brightness-110 transition-all uppercase tracking-wider text-center">
+        JETZT KONTAKTIEREN
+      </a>
+      <a href="/ueber-uns/" class="bg-transparent text-on-background border border-secondary px-8 py-4 font-label-sm text-label-sm rounded hover:bg-surface-container-low transition-all uppercase tracking-wider text-center">
+        ÜBER MICH
+      </a>
     </div>
   </section>
 
-  <!-- Kontaktkacheln -->
-  <section class="pb-12 px-margin-mobile md:px-4 md:px-margin-desktop max-w-container-max mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-12">
-
-      <div class="bg-surface-container-lowest border border-outline-variant p-10 rounded-xl flex flex-col items-center text-center hover:border-primary group transition-all">
-        <div class="bg-primary/10 p-4 rounded-full mb-6 group-hover:bg-primary transition-colors">
-          <span class="material-symbols-outlined text-4xl text-primary group-hover:text-white">call</span>
-        </div>
-        <h2 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4">Anrufen</h2>
-        <a class="font-headline-md text-headline-md text-primary hover:opacity-80 transition-opacity" href="tel:+41793912469">+41 79 391 24 69</a>
-        <p class="mt-4 font-body-md text-on-surface-variant">Am schnellsten – ich bin meistens erreichbar.</p>
-      </div>
-
-      <div class="bg-surface-container-lowest border border-outline-variant p-10 rounded-xl flex flex-col items-center text-center hover:border-primary group transition-all">
-        <div class="bg-primary/10 p-4 rounded-full mb-6 group-hover:bg-primary transition-colors">
-          <span class="material-symbols-outlined text-4xl text-primary group-hover:text-white">mail</span>
-        </div>
-        <h2 class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant mb-4">Schreiben</h2>
-        <a class="font-headline-md text-headline-md text-primary hover:opacity-80 transition-opacity break-all" href="mailto:info@hauswartung-hecht.ch">info@hauswartung-hecht.ch</a>
-        <p class="mt-4 font-body-md text-on-surface-variant">Ich antworte in der Regel innerhalb von 24 Stunden.</p>
-      </div>
-
-    </div>
-
-    <!-- Erreichbarkeit + Notdienst -->
-    <div class="bg-surface-container border border-outline-variant rounded-xl p-8 md:p-12 mb-12">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="flex items-center gap-6">
-          <span class="material-symbols-outlined text-primary text-4xl">schedule</span>
-          <div>
-            <h3 class="font-headline-md text-on-surface mb-2">Wann ich erreichbar bin</h3>
-            <div class="flex flex-col md:flex-row gap-4 md:gap-8 text-on-surface-variant">
-              <p><span class="font-bold text-on-surface">Mo – Fr:</span> 07:00 – 18:00 Uhr</p>
-              <p><span class="font-bold text-on-surface">Sa:</span> 08:00 – 14:00 Uhr</p>
-            </div>
-            <p class="text-on-surface-variant mt-2 font-body-md text-sm">Ausserhalb der Zeiten? Eine Nachricht genügt – ich melde mich sobald ich kann.</p>
-          </div>
-        </div>
-        <div class="bg-primary text-on-primary px-8 py-6 rounded-lg text-center">
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- Petr Hecht -->
-    <div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-8 md:p-10 mb-12">
-      <div class="flex flex-col sm:flex-row items-center gap-8">
-        <div class="flex-shrink-0">
-          <div class="w-40 h-48 overflow-hidden rounded-xl border border-outline-variant shadow">
-            <img src="/Petr-hecht.jpg" alt="Petr Hecht – Gründer & Inhaber Hauswartung Hecht"
-              class="w-full h-full object-cover object-top" width="160" height="192" loading="lazy"/>
-          </div>
-        </div>
-        <div>
-          <h2 class="font-headline-md text-headline-md text-on-surface mb-1">Petr Hecht</h2>
-          <p class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4">Gründer & Inhaber</p>
-          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-            Wenn Sie anrufen oder schreiben, sind Sie direkt bei mir. Kein Sekretariat, keine Hotline – ich bin persönlich für Sie da und erledige die Arbeit auch selbst.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Standort -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
-      <div class="md:col-span-3 rounded-xl overflow-hidden border border-outline-variant h-[360px] bg-surface-container-high flex items-center justify-center relative">
-        <div class="text-center p-8">
-          <span class="material-symbols-outlined text-primary text-6xl mb-4 block">location_on</span>
-          <p class="font-headline-md text-headline-md text-on-surface mb-2">Standort: Dietwil, Aargau</p>
-          <p class="font-body-lg text-on-surface-variant mb-6">Zentral gelegen zwischen Zürich, Zug und Luzern – kurze Wege in die ganze Region.</p>
-          <a href="https://maps.google.com/?q=Dietwil+5632+Aargau+Schweiz" target="_blank" rel="noopener"
-            class="inline-flex items-center gap-2 bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded hover:brightness-110 transition-all uppercase tracking-wider">
-            <span class="material-symbols-outlined" style="font-size:16px;">open_in_new</span>
-            In Google Maps öffnen
-          </a>
-        </div>
-      </div>
-
-      <div class="bg-primary flex flex-col justify-center items-center text-on-primary p-8 rounded-xl text-center gap-4">
-        <span class="material-symbols-outlined text-5xl">handyman</span>
-        <h3 class="font-headline-md text-headline-md">Einzugsgebiet</h3>
-        <ul class="font-body-md opacity-90 space-y-2 text-left">
-          <li>📍 Kanton Zürich</li>
-          <li>📍 Kanton Aargau</li>
-          <li>📍 Kanton Zug</li>
-          <li>📍 Kanton Luzern</li>
-          <li>📍 Kanton Schwyz</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Abschluss CTA -->
-  <section class="py-20 px-margin-mobile md:px-4 md:px-margin-desktop max-w-container-max mx-auto border-t border-outline-variant">
-    <div class="flex flex-col md:flex-row items-center justify-between gap-gutter">
-      <div class="max-w-xl text-center md:text-left">
-        <h2 class="font-headline-md text-headline-md mb-4">Unsicher, ob ich der Richtige bin?</h2>
-        <p class="font-body-md text-secondary">Melden Sie sich einfach – kein Verkaufsdruck, kein Verpflichtung. Wir reden kurz über Ihre Situation und ich sage Ihnen ehrlich, ob ich helfen kann.</p>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="tel:+41793912469" class="bg-primary text-on-primary px-8 py-4 font-label-sm text-label-sm rounded hover:brightness-110 transition-all uppercase tracking-wider text-center flex items-center gap-2 justify-center">
-          <span class="material-symbols-outlined" style="font-size:18px;">call</span> ANRUFEN
-        </a>
-        <a href="mailto:info@hauswartung-hecht.ch" class="border border-secondary text-on-background px-8 py-4 font-label-sm text-label-sm rounded hover:bg-surface-container-low transition-all uppercase tracking-wider text-center flex items-center gap-2 justify-center">
-          <span class="material-symbols-outlined" style="font-size:18px;">mail</span> E-MAIL
-        </a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="w-full bg-surface-container-low border-t border-outline-variant">
