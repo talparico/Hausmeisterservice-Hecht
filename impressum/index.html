@@ -10,7 +10,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
   <link rel="canonical" href="https://www.hauswartung-hecht.ch/impressum/"/>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style>
+  .section-light { background-color: #ecf5fe !important; }
+  .section-mid { background-color: #e6eff8 !important; }
+  .section-white { background-color: #ffffff !important; }
+  .card-white { background-color: #ffffff !important; }
+  [class*="bg-surface-container-low"] { background-color: #ecf5fe !important; }
+  [class*="bg-surface-container-high"] { background-color: #e0e9f2 !important; }
+  [class*="bg-surface-container"]:not([class*="lowest"]):not([class*="low"]):not([class*="high"]) { background-color: #e6eff8 !important; }
+  [class*="bg-surface-container-lowest"] { background-color: #ffffff !important; }
+  [class*="bg-background"] { background-color: #f6faff !important; }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <script id="tailwind-config">
     tailwind.config = {
@@ -126,7 +137,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="w-full bg-surface-container-low border-t border-outline-variant">
+<footer class="w-full border-t border-outline-variant">
   <div class="max-w-container-max mx-auto px-margin-mobile md:px-4 md:px-margin-desktop py-10">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
       <!-- Logo & Adresse -->
